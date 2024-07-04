@@ -12,9 +12,14 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@lmstudio/sdk": "^0.0.12",
+    "cors": "^2.8.5",
     "express": "^4.19.2",
+    "lodash": "^4.17.21",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   },
-  "gitHead": "eb198b1c427b6efc59a0589aed998492ce039d77"
+  "gitHead": "eb198b1c427b6efc59a0589aed998492ce039d77",
+  "devDependencies": {
+    "@types/express": "^4.17.21"
+  }
 }
