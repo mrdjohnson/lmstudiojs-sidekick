@@ -26,11 +26,7 @@ To prepare your project for production, compile the TypeScript code to JavaScrip
 npm run build
 ```
 
-This will compile the TypeScript code in the `src/` directory to JavaScript in the `dist/` directory.
-
-### Community & Help
-
-- [lmstudio.js GitHub](https://github.com/lmstudio-ai/lmstudio.js)
-- [Documentation](https://lmstudio.ai/docs/welcome)
-- [Discord](https://discord.gg/6Q7Xn6MRVS)
-- [Twitter](https://twitter.com/LMStudioAI)
+- GET /v1/models returns open ai compatible data for ALL models, as well as if they're loaded
+- POST /api/load loads the requested "model"
+- POST /api/unload unloads the requested "model"
+- POST /v1/completions open ai compatible completion endpoint, includes the load progress and stats for a generation (does not work with images) 
