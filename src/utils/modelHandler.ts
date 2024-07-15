@@ -3,7 +3,7 @@ import { LLMDescriptor, LLMLoadModelOpts, LMStudioClient } from '@lmstudio/sdk'
 import _ from 'lodash'
 
 //  NOTE: if you're using a different port or url, change it here (needs to be a web socket)
-const client = new LMStudioClient({baseUrl: 'ws://127.0.0.1:1234'})
+const client = new LMStudioClient({ baseUrl: 'ws://127.0.0.1:1234' })
 
 class ModelHandler {
     getLoaded = async () => {
@@ -41,6 +41,8 @@ class ModelHandler {
                 if (loadPercentage !== lastLoadPercent) {
                     handleLoadProgress(lastLoadPercent)
                 }
+
+                lastLoadPercent = loadPercentage
             }
         })
 
