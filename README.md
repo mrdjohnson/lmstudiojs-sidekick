@@ -8,23 +8,22 @@ Welcome to your new project! This scaffold is a starting point for building an A
 lms server start
 ```
 
-## Getting Started
+## Running the sidekick
 
-### Development
-
-The source code resides in the `src/` directory. For development purposes, you can run the project using:
-
-```start
-npm start
-```
-
-### Building for Production
+### Terminal:
 
 To prepare your project for production, compile the TypeScript code to JavaScript using:
 
 ```bash
-npm run build
+npm run dev
 ```
+
+ ### Docker:
+
+ You'll need to change `127.0.0.1` to `host.docker.internal` otherwise the client will not be able to connect (This is a replacement for localhost)
+ ```bash
+ docker-compose up -d
+ ```
 
 - GET /v1/models returns open ai compatible data for ALL models, as well as if they're loaded
 - POST /api/load loads the requested "model"
