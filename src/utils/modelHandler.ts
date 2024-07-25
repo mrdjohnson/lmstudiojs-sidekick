@@ -4,7 +4,7 @@ import _ from 'lodash'
 
 //  NOTE: if you're using a different port or url, change it here (needs to be a web socket)
 // NOTE: for docker this needs to be `host.docker.internal:1234` (whatever port)
-const client = new LMStudioClient({baseUrl: 'ws://host.docker.internal:1234'})
+const client = new LMStudioClient({ baseUrl: 'ws://127.0.0.1:1234' })
 
 class ModelHandler {
     getLoaded = async () => {
